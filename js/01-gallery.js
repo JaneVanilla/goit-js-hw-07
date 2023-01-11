@@ -47,7 +47,7 @@ function createBasicLightbox(html) {
   return basicLightbox.create(html, {
     onShow: (instance) => {
       document.onkeydown = function (e) {
-        if (e.keyCode == 27) {
+        if (e.key == "Escape") {
           instance.close();
         }
       };
